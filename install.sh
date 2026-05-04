@@ -142,7 +142,7 @@ fi
 
 # ── Destination paths ─────────────────────────────────────────────────────────
 YAZI_CFG_DIR="${HOME}/.config/yazi"
-YAZI_FLAVORS_DIR="${YAZI_CFG_DIR}/flavors"
+YAZI_FLAVORS_DIR="${YAZI_CFG_DIR}/flavours"
 
 # ── Step 1 — Create directory tree ───────────────────────────────────────────
 section "[ 1/4 ]  Preparing directories"
