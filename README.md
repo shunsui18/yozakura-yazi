@@ -17,10 +17,10 @@ A handcrafted pastel color palette for [yazi](https://github.com/sxyazi/yazi), b
 
 ## ✦ Flavors
 
-| | Flavor | Description |
-|---|---|---|
-| 🌙 | **Yoru** *(night)* | Deep, moonlit background with soft sakura accents |
-| ☀️ | **Hiru** *(day)* | Warm ivory canvas with gentle pastel tones |
+| | Flavor | Description | |
+|---|---|---|---|
+| 🌙 | **Yoru** *(night)* | Deep, moonlit background with soft sakura accents | [→ README](yozakura-yoru.yazi/README.md) |
+| ☀️ | **Hiru** *(day)* | Warm ivory canvas with gentle pastel tones | [→ README](yozakura-hiru.yazi/README.md) |
 
 ---
 
@@ -80,28 +80,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yazi/main/install.
 
 ### Method 2 — `ya pkg` (manual theme activation)
 
-You can install the flavor directly via yazi's package manager:
+Install a specific flavor directly via yazi's package manager. Full instructions — including the `[flavor]` activation step, icon setup, and per-flavor commands — live in each flavor's own README:
 
-```bash
-# yoru (night)
-ya pkg add shunsui18/yazi:yozakura-yoru
-
-# hiru (day)
-ya pkg add shunsui18/yazi:yozakura-hiru
-```
-
-After installing, you need to **manually activate** the flavor by editing your `~/.config/yazi/theme.toml`:
-
-```toml
-[flavor]
-use = "yozakura-yoru"   # or "yozakura-hiru" for the day flavor
-```
-
-> **Note:** The `ya pkg` method only installs the flavor files. It does not create a `theme.toml` for you — you must add or update the `[flavor]` block yourself.
-
-#### ✦ Full icon experience
-
-For the complete icon set (file-type icons with Yozakura colors), copy the `[icon]` section from the repo's `theme.toml` into your `~/.config/yazi/theme.toml` — or skip the manual work entirely by using the `theme.toml` approach below.
+- 🌙 [yozakura-yoru — `ya pkg` install](yozakura-yoru.yazi/README.md#-installation-via-ya-pkg)
+- ☀️ [yozakura-hiru — `ya pkg` install](yozakura-hiru.yazi/README.md#-installation-via-ya-pkg)
 
 ---
 
