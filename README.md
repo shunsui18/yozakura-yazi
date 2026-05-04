@@ -99,9 +99,31 @@ use = "yozakura-yoru"   # or "yozakura-hiru" for the day flavor
 
 > **Note:** The `ya pkg` method only installs the flavor files. It does not create a `theme.toml` for you — you must add or update the `[flavor]` block yourself.
 
+#### ✦ Full icon experience
+
+For the complete icon set (file-type icons with Yozakura colors), copy the `[icon]` section from the repo's `theme.toml` into your `~/.config/yazi/theme.toml` — or skip the manual work entirely by using the `theme.toml` approach below.
+
 ---
 
-### Method 3 — Manual Installation
+### Method 3 — Use the provided `theme.toml` directly
+
+The repo ships a ready-made `theme.toml` that already contains both the `[flavor]` block and the full `[icon]` section. You can drop it straight into your yazi config — no manual editing needed.
+
+**Copy it:**
+```bash
+cp theme.toml ~/.config/yazi/theme.toml
+```
+
+**Or symlink it** (changes in the repo reflect instantly):
+```bash
+ln -sf "$(pwd)/theme.toml" ~/.config/yazi/theme.toml
+```
+
+> The repo's `theme.toml` is itself a symlink to `flavors/yozakura-yoru.yazi/theme.toml` (night flavor). To use the day flavor instead, point your symlink to `flavors/yozakura-hiru.yazi/theme.toml`.
+
+---
+
+### Method 4 — Manual Installation
 
 If you prefer to install by hand:
 
@@ -118,7 +140,7 @@ bash install.sh --theme yoru
 
 ---
 
-## ✦ What the Installer Does
+## ✦ What the Installer Does (Methods 1 & 4)
 
 1. **Self-locates** — resolves its own path; in remote mode fetches all theme files from GitHub into a temp directory automatically
 2. **Prompts** — shows an interactive flavor menu if no `--theme` flag is given; accepts a number or flavor name
