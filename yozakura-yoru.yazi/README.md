@@ -1,5 +1,4 @@
 <div align="center">
-
 <img src="https://raw.githubusercontent.com/shunsui18/yozakura/refs/heads/main/resources/icons/icon-animated.svg" alt="Yozakura" width="80"/>
 
 # 🌙 yozakura-yoru
@@ -12,7 +11,6 @@ Deep navy blues and moonlit backgrounds, softened with sakura petal accents.
 [![Palette](https://img.shields.io/badge/palette-yozakura-ffb7c5?style=flat-square)](https://github.com/shunsui18/yozakura)
 
 ← [Back to main README](../README.md)
-
 </div>
 
 ---
