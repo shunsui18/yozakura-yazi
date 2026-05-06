@@ -43,7 +43,7 @@ Deep navy blues and moonlit backgrounds, softened with sakura petal accents.
 Install this flavor directly through yazi's built-in package manager:
 
 ```bash
-ya pkg add shunsui18/yazi:yozakura-yoru
+ya pkg add shunsui18/yozakura-yazi:yozakura-yoru
 ```
 
 Then **manually activate** it by adding or updating the `[flavor]` block in your `~/.config/yazi/theme.toml`:
